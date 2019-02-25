@@ -1,0 +1,38 @@
+<div class="chat">
+    <div class="list">
+      <ul>
+        <li *ngFor="let msg of messages" [message]="msg"></li>
+        <!-- <li>Welcome</li>
+        <li>Hello</li>
+        <li>What can I do for you?</li> -->
+      </ul>
+    </div>
+
+    <div class="text">
+        <textarea>Write your text here</textarea>
+        <button type="submit" (click)="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- <div class="chatlist" #chatlist>
+        <ul class="list-group">
+          <message-item *ngFor="let msg of messages" [message]="msg"></message-item>
+        </ul>
+      </div>
+
+      <div class="chatcontrol">
+            <input type="text" class="form-control chatinput" (keyup.enter)="sendMessage()" [(ngModel)]="message.content"/>
+            <button class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
+          </div>
+
+          
+          <li class="list-group-item">
+                <img [src]="message.avatar" class="avatar"/>
+                <div class="message">
+                  {{message.content}}
+                </div>
+                <div class="timeform">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="timestamp">at {{message.timestamp | date : 'dd/MM/yyyy' }}</span>
+                </div>
+              </li>
+               -->
