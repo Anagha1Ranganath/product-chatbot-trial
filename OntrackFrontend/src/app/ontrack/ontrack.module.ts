@@ -1,6 +1,6 @@
 import { CartComponent } from './components/cart/cart.component';
 
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { SearchComponent } from './components/search/search.component';
@@ -49,7 +49,8 @@ import { ChatComponent } from './components/chat/chat.component';
   ReactiveFormsModule,
   FormsModule,
   LoginModule,
-  MatProgressSpinnerModule, MatRadioModule
+  MatProgressSpinnerModule, MatRadioModule,
+  HttpClientModule
 
   ],
 

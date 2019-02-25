@@ -15,6 +15,7 @@ import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material';
 import { FormsModule, FormGroup } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [],

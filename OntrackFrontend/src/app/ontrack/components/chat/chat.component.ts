@@ -1,6 +1,7 @@
 import { Component, OnInit, NgModule, Input } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms'; // used for reactive forms
 import { DialogflowService } from '../../services/dialogflow.service';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-chat',
@@ -10,10 +11,10 @@ import { DialogflowService } from '../../services/dialogflow.service';
 
 export class ChatComponent implements OnInit {
 
-  @Input('message')
+
   private message: Message;
 
-  @Input('messages')
+
   private messages: Message[];
 
   constructor(private dialogFlowService: DialogflowService) { }
